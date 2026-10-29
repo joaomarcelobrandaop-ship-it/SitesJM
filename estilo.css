@@ -1,0 +1,190 @@
+/* fontes guardadas junto com o site (regra 8: nada de IP do visitante indo ao Google) */
+@font-face{font-family:"Bricolage Grotesque";font-style:normal;font-weight:500 800;font-display:swap;
+  src:url(fontes/bricolage-grotesque.woff2) format("woff2")}
+@font-face{font-family:"Instrument Sans";font-style:normal;font-weight:400 600;font-display:swap;
+  src:url(fontes/instrument-sans.woff2) format("woff2")}
+:root{
+  --azul:#1C3F8C; --azul-esc:#16326F; --ipe:#F2B705; --terra:#A8472A;
+  --papel:#EFE6D2; --noite:#0F1A2E; --ipe-claro:#FFC933;
+  --ease-out:cubic-bezier(0.23,1,0.32,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font:16px/1.6 "Instrument Sans",system-ui,sans-serif;color:var(--papel);background:var(--azul);overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;line-height:1.04;text-wrap:balance}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+:focus-visible{outline:3px solid var(--ipe);outline-offset:3px}
+
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 24px;border-radius:999px;
+  background:var(--ipe);color:var(--noite);font-weight:600;text-decoration:none;transition:transform .16s var(--ease-out)}
+.btn:active{transform:scale(.97)}
+.btn svg{width:20px;height:20px}
+
+/* ---------- topo ---------- */
+.topo{display:flex;justify-content:space-between;align-items:center;padding-block:18px}
+.marca{display:inline-flex;align-items:center;min-height:44px;font-family:"Bricolage Grotesque";font-weight:800;font-size:20px;text-decoration:none}
+.marca span{color:var(--ipe)}
+.topo nav{display:flex;gap:4px}
+.topo nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;text-decoration:none;font-weight:600;opacity:.85}
+.topo nav a:hover{opacity:1}
+
+/* ---------- hero ---------- */
+.hero{display:grid;grid-template-columns:1.15fr 1fr;gap:48px;align-items:center;padding-block:48px 88px}
+.hero h1{font-size:clamp(40px,6.6vw,84px);letter-spacing:-.02em}
+.hero h1 em{font-style:normal;color:var(--ipe)}
+.hero p{max-width:46ch;margin:22px 0 30px;font-size:18px;opacity:.92}
+
+/* painel de azulejos: assinatura da página */
+.painel{display:grid;grid-template-columns:repeat(4,1fr);aspect-ratio:1}
+.az{background:var(--papel);position:relative;overflow:hidden}
+.az::before{content:"";position:absolute;inset:0}
+.q1::before{background:radial-gradient(circle at 0 0,var(--azul) 70%,transparent 71%)}
+.q2::before{background:radial-gradient(circle at 100% 100%,var(--azul) 70%,transparent 71%)}
+.t1::before{background:linear-gradient(135deg,var(--azul) 50%,transparent 50%)}
+.t2::before{background:linear-gradient(-45deg,var(--terra) 50%,transparent 50%)}
+.h1::before{background:linear-gradient(var(--azul) 50%,transparent 50%)}
+.c1::before{background:radial-gradient(circle,var(--ipe) 34%,transparent 35%)}
+@media (prefers-reduced-motion:no-preference){
+  .painel .az{animation:assenta .5s var(--ease-out) both;animation-delay:calc(var(--i) * 45ms)}
+  @keyframes assenta{from{opacity:0;transform:scale(.94)}}
+}
+
+/* ---------- projetos ---------- */
+.projetos{background:var(--papel);color:var(--noite);padding:80px 0 96px}
+.projetos h2{font-size:clamp(34px,4.6vw,56px);color:var(--azul);max-width:16ch}
+.legenda{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:18px;font-size:15px}
+.legenda span{display:inline-flex;align-items:center;gap:8px}
+
+.grade{display:grid;grid-template-columns:repeat(6,1fr);margin-top:44px}
+.proj{grid-column:span 3;display:flex;flex-direction:column;text-decoration:none;color:var(--papel)}
+.proj.grande{grid-column:span 4}
+.proj .foto{position:relative;overflow:hidden;aspect-ratio:16/10;background:var(--noite)}
+.proj .foto img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .5s var(--ease-out)}
+@media (hover:hover) and (pointer:fine){ .proj:hover .foto img{transform:scale(1.03)} }
+.proj .info{flex:1;padding:24px 26px 28px;display:flex;flex-direction:column;gap:6px}
+.proj h3{font-size:28px}
+.proj .onde{font-weight:600;opacity:.8}
+.proj p{opacity:.92;max-width:52ch}
+.proj .ver{margin-top:auto;padding-top:12px;font-weight:600;color:var(--ipe);text-decoration:underline;text-underline-offset:4px}
+.cor-azul .info{background:var(--azul)}
+.cor-terra .info{background:var(--terra)}
+.cor-noite .info{background:var(--noite)}
+.cor-azulesc .info{background:var(--azul-esc)}
+
+.marcas{display:flex;flex-wrap:wrap;gap:8px;position:absolute;top:14px;left:14px}
+.selo{display:inline-flex;align-items:center;gap:7px;min-height:30px;padding:0 12px 0 8px;border-radius:999px;font-size:14px;font-weight:600;background:var(--papel);color:var(--noite)}
+.selo i{width:14px;height:14px;flex:none}
+.selo.ext i{background:linear-gradient(135deg,var(--azul) 50%,var(--ipe) 50%)}
+.selo.mvp i{background:radial-gradient(circle,var(--terra) 45%,transparent 46%);border:2px solid var(--terra);border-radius:50%}
+.legenda .selo{background:#fff8}
+
+/* números do Pena de Ouro */
+.numeros{grid-column:span 2;background:var(--ipe);color:var(--noite);padding:32px 28px;display:flex;flex-direction:column;justify-content:center;gap:22px}
+.numeros strong{display:block;font-family:"Bricolage Grotesque";font-size:clamp(44px,5vw,64px);line-height:1;font-variant-numeric:tabular-nums}
+.numeros span{display:block;margin-top:4px}
+.numeros small{font-size:14px;opacity:.8}
+
+/* ---------- como trabalho ---------- */
+.como{background:var(--azul);padding:88px 0}
+.como h2{font-size:clamp(32px,4.4vw,52px);max-width:18ch}
+.passos{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:44px;counter-reset:p}
+.passos li{padding:28px;counter-increment:p;background:var(--azul-esc)}
+.passos li:nth-child(2){background:var(--terra)}
+.passos li:nth-child(3){background:var(--noite)}
+.passos li::before{content:counter(p);display:block;font-family:"Bricolage Grotesque";font-weight:800;font-size:52px;line-height:1;color:var(--ipe);margin-bottom:14px}
+.passos h3{font-size:24px;margin-bottom:8px}
+.passos-4{grid-template-columns:repeat(4,1fr);margin-bottom:36px}
+.passos-4 li:nth-child(4){background:var(--azul-esc)}
+.passos-4 li:nth-child(1){background:var(--noite)}
+
+/* ---------- página: como funciona ---------- */
+.ativo{opacity:1!important;text-decoration:underline!important;text-underline-offset:6px}
+.abre{padding-block:40px 72px}
+.abre h1{font-size:clamp(40px,6.4vw,80px);letter-spacing:-.02em;max-width:14ch}
+.abre p{max-width:52ch;margin-top:20px;font-size:18px;opacity:.92}
+.etapa{padding:80px 0;color:var(--papel)}
+.etapa .wrap{display:grid;grid-template-columns:160px 1fr;gap:40px}
+.etapa .n{font-family:"Bricolage Grotesque";font-weight:800;font-size:120px;line-height:.85;color:var(--ipe)}
+.etapa h2{font-size:clamp(30px,4vw,48px);max-width:20ch;margin-bottom:18px}
+.etapa p{max-width:60ch;font-size:18px;margin-bottom:14px}
+.etapa ul{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:2px;margin:26px 0 8px;max-width:760px}
+.etapa li{padding:16px 18px;background:#0002}
+.etapa .recebe{margin-top:22px;font-weight:600;color:var(--ipe)}
+.e1{background:var(--noite)} .e2{background:var(--azul-esc)} .e3{background:var(--terra)} .e4{background:var(--azul)}
+.e2 .exemplo{margin-top:26px;padding:24px;background:var(--papel);color:var(--noite);max-width:760px}
+.e2 .exemplo h3{font-size:22px;margin-bottom:8px;color:var(--azul)}
+.e2 .exemplo p{font-size:16px}
+.e2 .exemplo ul{margin-top:14px}
+.e2 .exemplo li{background:#1C3F8C14}
+
+/* ---------- contato ---------- */
+.contato{background:var(--terra);padding:80px 0}
+.contato h2{font-size:clamp(32px,4.6vw,56px);max-width:16ch;margin-bottom:16px}
+.contato p{max-width:48ch;margin-bottom:28px;font-size:18px}
+.rodape{background:var(--noite);padding:28px 0;font-size:15px}
+.rodape .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+.rodape a{display:inline-flex;align-items:center;min-height:44px}
+
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr;padding-block:24px 64px;gap:36px}
+  .painel{max-width:340px}
+  .grade{grid-template-columns:1fr}
+  .proj,.proj.grande,.numeros{grid-column:auto}
+  .passos,.passos-4{grid-template-columns:1fr}
+  .etapa{padding:56px 0}
+  .etapa .wrap{grid-template-columns:1fr;gap:12px}
+  .etapa .n{font-size:72px}
+  .etapa ul{grid-template-columns:1fr}
+  .topo{flex-wrap:wrap;padding-block:10px 4px}
+  .topo nav{width:100%;flex-wrap:wrap;justify-content:space-between}
+  .topo nav a{padding:0 6px;font-size:15px;white-space:nowrap}
+  .topo nav a:first-child{padding-left:0}
+  .topo nav a:last-child{padding-right:0}
+}
+
+/* ---------- página: pacotes ---------- */
+.pacotes{background:var(--papel);color:var(--noite);padding:72px 0}
+.planos{display:grid;grid-template-columns:repeat(4,1fr)}
+.plano{padding:30px 26px;display:flex;flex-direction:column;gap:10px;color:var(--papel)}
+.plano h2{font-size:30px}
+.plano .preco strong{font-family:"Bricolage Grotesque";font-size:40px;font-weight:800;color:var(--ipe);font-variant-numeric:tabular-nums}
+.plano .mensal{font-weight:600}
+.plano .pra{opacity:.85;font-size:15px}
+.plano .btn{margin-top:auto;align-self:flex-start}
+.p1{background:var(--azul)} .p2{background:var(--terra)} .p3{background:var(--noite)} .p4{background:var(--azul-esc)}
+.pacotes .nota{max-width:70ch;margin-top:24px;font-size:15px}
+.todos{background:var(--azul);padding:80px 0}
+.todos h2,.compara h2{font-size:clamp(30px,4.2vw,50px);max-width:20ch}
+.lead{max-width:62ch;font-size:18px;margin-top:16px}
+.lista{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:2px;margin-top:32px;max-width:900px}
+.lista li{padding:16px 18px;background:var(--azul-esc)}
+.compara{background:var(--noite);padding:80px 0}
+.lados{display:grid;grid-template-columns:1fr 1fr;margin-top:36px}
+.lado{padding:30px 28px;display:flex;flex-direction:column;gap:12px}
+.l1{background:var(--azul-esc)} .l2{background:var(--terra)}
+.lado h3{font-size:28px;color:var(--ipe)}
+.lado .ex{font-size:15px;opacity:.85}
+.lado .bom{font-weight:600;margin-top:auto}
+.compara .fim{margin-top:32px}
+@media (max-width:1000px){ .planos{grid-template-columns:1fr 1fr} }
+@media (max-width:860px){ .planos,.lista,.lados{grid-template-columns:1fr} }
+
+/* contraste sobre terra: amarelo só em letra grande; texto pequeno em creme cheio */
+.cor-terra .ver,.e3 .recebe{color:var(--papel)}
+.cor-terra .onde,.cor-terra p,.p2 .pra,.l2 .ex{opacity:1}
+
+/* ---------- acabamento ---------- */
+::selection{background:var(--ipe);color:var(--noite)}
+p,li{text-wrap:pretty}
+.pular{position:absolute;left:16px;top:-60px;z-index:10;padding:12px 18px;background:var(--ipe);color:var(--noite);font-weight:600;border-radius:999px;text-decoration:none}
+.pular:focus{top:12px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.rodape a{text-underline-offset:4px}
+@media (hover:hover) and (pointer:fine){
+  .btn{transition:transform .16s var(--ease-out),background-color .16s ease}
+  .btn:hover{background:var(--ipe-claro)}
+  .proj:hover .ver{text-decoration-thickness:2px}
+}
+.topo nav .lingua{opacity:1;color:var(--ipe);letter-spacing:.04em}
