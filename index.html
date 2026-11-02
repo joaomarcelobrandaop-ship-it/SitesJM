@@ -3,13 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>João Marcelo · Sites para pequenos negócios</title>
-<meta name="description" content="João Marcelo, desenvolvedor de sites em Brasília. Sites para pequenos negócios do Brasil inteiro e do exterior, feitos para aparecer no Google.">
+<title>Criação de sites para pequenos negócios · João Marcelo, Brasília</title>
+<meta name="description" content="Sites para pequenos negócios do Brasil inteiro, prontos para o Google e para as respostas de IA. Você vê a prévia grátis antes de pagar. João Marcelo, desenvolvedor em Brasília.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 fill=%27%23EFE6D2%27/%3E%3Cpath d=%27M0 0h32L0 32z%27 fill=%27%231C3F8C%27/%3E%3Ccircle cx=%2722%27 cy=%2722%27 r=%276%27 fill=%27%23F2B705%27/%3E%3C/svg%3E">
-<meta property="og:title" content="João Marcelo · Sites para pequenos negócios">
-<meta property="og:description" content="João Marcelo, desenvolvedor de sites em Brasília. Sites para pequenos negócios do Brasil inteiro e do exterior, feitos para aparecer no Google.">
+<meta property="og:title" content="Criação de sites para pequenos negócios · João Marcelo, Brasília">
+<meta property="og:description" content="Sites para pequenos negócios do Brasil inteiro, prontos para o Google e para as respostas de IA. Você vê a prévia grátis antes de pagar. João Marcelo, desenvolvedor em Brasília.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://sitesjm.vercel.app/">
+<meta property="og:image" content="https://sitesjm.vercel.app/img/og-sitesjm.png">
 <meta name="theme-color" content="#1C3F8C">
 <link rel="canonical" href="https://sitesjm.vercel.app/">
 <link rel="alternate" hreflang="pt-BR" href="index.html">
@@ -20,29 +22,129 @@
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
- "@type": "ProfessionalService",
- "name": "João Marcelo · Sites para pequenos negócios",
- "url": "https://sitesjm.vercel.app/",
- "founder": {
-  "@type": "Person",
-  "name": "João Marcelo Brandão"
- },
- "description": "Sites para pequenos negócios, prontos para aparecer no Google e nas respostas de IA. Atendimento 100% remoto, para todo o Brasil.",
- "telephone": "+55 61 99998-6693",
- "email": "joaomarcelobrandaop@gmail.com",
- "address": {
-  "@type": "PostalAddress",
-  "addressLocality": "Brasília",
-  "addressRegion": "DF",
-  "addressCountry": "BR"
- },
- "areaServed": {
-  "@type": "Country",
-  "name": "Brasil"
- },
- "knowsLanguage": [
-  "pt-BR",
-  "en"
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://sitesjm.vercel.app/#site",
+   "url": "https://sitesjm.vercel.app/",
+   "name": "João Marcelo · Sites para pequenos negócios",
+   "inLanguage": [
+    "pt-BR",
+    "en"
+   ],
+   "publisher": {
+    "@id": "https://sitesjm.vercel.app/#negocio"
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://sitesjm.vercel.app/#joao",
+   "name": "João Marcelo Brandão",
+   "jobTitle": "Desenvolvedor de sites",
+   "worksFor": {
+    "@id": "https://sitesjm.vercel.app/#negocio"
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Brasília",
+    "addressRegion": "DF",
+    "addressCountry": "BR"
+   },
+   "knowsLanguage": [
+    "pt-BR",
+    "en"
+   ],
+   "knowsAbout": [
+    "Criação de sites",
+    "SEO",
+    "SEO local",
+    "Otimização para respostas de IA",
+    "Sites para turismo",
+    "Sites para hospedagem"
+   ]
+  },
+  {
+   "@type": "ProfessionalService",
+   "@id": "https://sitesjm.vercel.app/#negocio",
+   "name": "João Marcelo · Sites para pequenos negócios",
+   "url": "https://sitesjm.vercel.app/",
+   "founder": {
+    "@id": "https://sitesjm.vercel.app/#joao"
+   },
+   "description": "Criação de sites para pequenos negócios, prontos para aparecer no Google e nas respostas de IA. Prévia grátis antes de pagar. Atendimento a distância, para todo o Brasil e o exterior.",
+   "telephone": "+55 61 99998-6693",
+   "email": "joaomarcelobrandaop@gmail.com",
+   "image": "https://sitesjm.vercel.app/img/og-sitesjm.png",
+   "priceRange": "R$ 0 – R$ 2.100",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Brasília",
+    "addressRegion": "DF",
+    "addressCountry": "BR"
+   },
+   "areaServed": [
+    {
+     "@type": "Country",
+     "name": "Brasil"
+    },
+    {
+     "@type": "Country",
+     "name": "Malta"
+    }
+   ],
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Pacotes de site",
+    "itemListElement": [
+     {
+      "@type": "Offer",
+      "name": "Essencial",
+      "price": "900",
+      "priceCurrency": "BRL",
+      "description": "Site de uma página longa. Mais R$ 100 por mês.",
+      "url": "https://sitesjm.vercel.app/pacotes.html"
+     },
+     {
+      "@type": "Offer",
+      "name": "Profissional",
+      "price": "1500",
+      "priceCurrency": "BRL",
+      "description": "Site com até 5 páginas, uma por serviço. Mais R$ 80 por mês.",
+      "url": "https://sitesjm.vercel.app/pacotes.html"
+     },
+     {
+      "@type": "Offer",
+      "name": "Completo",
+      "price": "2100",
+      "priceCurrency": "BRL",
+      "description": "Site com várias páginas e até 3 línguas. 3 meses sem mensalidade, depois R$ 80 por mês.",
+      "url": "https://sitesjm.vercel.app/pacotes.html"
+     },
+     {
+      "@type": "Offer",
+      "name": "Assinatura",
+      "price": "0",
+      "priceCurrency": "BRL",
+      "description": "Site de uma página sem entrada, por R$ 149 por mês, com fidelidade de 12 meses.",
+      "url": "https://sitesjm.vercel.app/pacotes.html"
+     }
+    ]
+   },
+   "makesOffer": [
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@id": "https://sitesjm.vercel.app/sites-para-turismo.html#servico"
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@id": "https://sitesjm.vercel.app/sites-para-hospedagem.html#servico"
+     }
+    }
+   ]
+  }
  ]
 }
 </script>
@@ -95,7 +197,7 @@
         <div><strong>1.248</strong><span>aparições no Google</span></div>
         <div><strong>180</strong><span>visitas sem pagar anúncio</span></div>
         <div><strong>206</strong><span>aparições nas respostas de IA do Google</span></div>
-        <small>Pena de Ouro, nas primeiras 10 semanas no ar. Fonte: Google Search Console.</small>
+        <small>Pena de Ouro, nas primeiras 10 semanas no ar. Fonte: Google Search Console. <a href="caso-pena-de-ouro.html">Ver o caso</a></small>
       </div>
 
       <a class="proj cor-terra" href="https://majestade-flutuante.vercel.app" target="_blank" rel="noopener">
@@ -144,6 +246,17 @@
   </div>
 </section>
 
+<section class="paraquem">
+  <div class="wrap">
+    <h2>Para quem eu faço site</h2>
+    <div class="cards">
+      <a class="card" href="sites-para-turismo.html"><h3>Turismo e passeios</h3><p>Agência, receptivo, lancha, buggy, trilha. Uma página por passeio, com preço e WhatsApp.</p><span class="ver">Sites para turismo</span></a>
+      <a class="card" href="sites-para-hospedagem.html"><h3>Pousadas, hostels e hotéis</h3><p>Para vender mais direto, sem depender só do Booking e do Airbnb.</p><span class="ver">Sites para hospedagem</span></a>
+      <a class="card" href="perguntas-frequentes.html"><h3>Qualquer pequeno negócio</h3><p>Clínica, estúdio, restaurante, criatório. Veja as dúvidas mais comuns antes de começar.</p><span class="ver">Perguntas frequentes</span></a>
+    </div>
+  </div>
+</section>
+
 <section class="como" id="como">
   <div class="wrap">
     <h2>Você vê o site antes de pagar.</h2>
@@ -167,9 +280,22 @@
 </main>
 
 <footer class="rodape">
-  <div class="wrap">
-    <span>João Marcelo Brandão · Brasília, DF</span>
-    <a href="mailto:joaomarcelobrandaop@gmail.com">joaomarcelobrandaop@gmail.com</a>
+  <div class="wrap rodape-g">
+    <div>
+      <p class="r-nome">João Marcelo Brandão</p>
+      <p>Desenvolvedor de sites em Brasília, DF. Atendo o Brasil inteiro, a distância.</p>
+      <p><a href="https://wa.me/5561999986693">WhatsApp (61) 99998-6693</a><br><a href="mailto:joaomarcelobrandaop@gmail.com">joaomarcelobrandaop@gmail.com</a></p>
+    </div>
+    <nav aria-label="Páginas do site">
+      <a href="index.html">Início</a>
+      <a href="como-funciona.html">Como funciona</a>
+      <a href="google.html">Como aparecer no Google</a>
+      <a href="pacotes.html">Pacotes e preços</a>
+      <a href="sites-para-turismo.html">Sites para turismo</a>
+      <a href="sites-para-hospedagem.html">Sites para pousadas e hostels</a>
+      <a href="perguntas-frequentes.html">Perguntas frequentes</a>
+      <a href="caso-pena-de-ouro.html">Caso: Pena de Ouro</a>
+    </nav>
   </div>
 </footer>
 

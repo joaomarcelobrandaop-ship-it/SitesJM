@@ -226,3 +226,45 @@ p,li{text-wrap:pretty}
   .barras li{grid-template-columns:1fr auto;grid-template-areas:"rot num" "barra barra" "obs obs"}
   .real-n{grid-template-columns:1fr}
 }
+
+/* ---------- rodapé com mapa do site ---------- */
+.rodape-g{display:grid!important;grid-template-columns:1fr 1.2fr;gap:28px 48px;padding-block:24px}
+.rodape-g p{margin-bottom:10px;max-width:42ch}
+.r-nome{font-family:"Bricolage Grotesque";font-weight:800;font-size:20px}
+.rodape-g nav{display:grid;grid-template-columns:1fr 1fr;gap:0 24px;align-content:start}
+.rodape-g nav a,.rodape-g p a{min-height:44px;display:inline-flex;align-items:center}
+.rodape-g p a{min-height:32px}
+@media (max-width:640px){ .rodape-g,.rodape-g nav{grid-template-columns:1fr} }
+
+/* ---------- fontes, links claros ---------- */
+.sub-claro{font-size:clamp(22px,2.6vw,28px);margin-top:44px}
+.fontes{list-style:none;margin-top:16px;display:grid;gap:2px;max-width:900px;font-size:15px}
+.fontes li{padding:12px 16px;background:var(--azul-esc)}
+.fontes a,.todos .lista a,.link-claro{color:var(--papel);text-underline-offset:4px}
+.todos .lista a strong{color:var(--ipe)}
+.link-claro{display:inline-flex;align-items:center;min-height:44px;font-weight:600}
+.etapa p a{color:inherit;text-underline-offset:4px}
+
+/* ---------- perguntas frequentes ---------- */
+.faq{background:var(--papel);color:var(--noite);padding:56px 0 80px}
+.faq .wrap{display:grid;gap:2px;max-width:860px}
+.faq details{background:var(--azul);color:var(--papel)}
+.faq details:nth-child(4n+2){background:var(--azul-esc)}
+.faq details:nth-child(4n+3){background:var(--terra)}
+.faq details:nth-child(4n+4){background:var(--noite)}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center;min-height:56px;padding:14px 20px;font-family:"Bricolage Grotesque";font-weight:800;font-size:20px;line-height:1.25}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex:none;font-size:28px;line-height:1;color:var(--ipe)}
+.faq details[open] summary::after{content:"–"}
+.faq details p{padding:0 20px 20px;max-width:62ch;font-size:17px}
+.faq details:nth-child(4n+3) summary::after{color:var(--papel)}
+
+/* ---------- para quem (home) ---------- */
+.paraquem{background:var(--noite);padding:80px 0}
+.paraquem h2{font-size:clamp(30px,4.2vw,50px);max-width:20ch}
+.paraquem .cards{display:grid;grid-template-columns:repeat(3,1fr);margin-top:36px}
+.paraquem .card{display:flex;flex-direction:column;gap:10px;padding:28px 26px;text-decoration:none;color:var(--papel)}
+.paraquem .card:nth-child(1){background:var(--azul)} .paraquem .card:nth-child(2){background:var(--terra)} .paraquem .card:nth-child(3){background:var(--azul-esc)}
+.paraquem .card h3{font-size:26px}
+.paraquem .card .ver{margin-top:auto;padding-top:8px;font-weight:600;text-decoration:underline;text-underline-offset:4px}
+@media (max-width:860px){ .paraquem .cards{grid-template-columns:1fr} }

@@ -1,0 +1,26 @@
+# João Marcelo · Sites para pequenos negócios
+
+> João Marcelo Brandão é desenvolvedor de sites em Brasília (DF, Brasil). Faz sites para pequenos negócios do Brasil inteiro e do exterior, a distância, prontos para aparecer no Google e nas respostas de IA. O cliente vê uma prévia grátis do site antes de pagar. Especialidade: turismo (agências, passeios, receptivos) e hospedagem (pousadas, hostels, hotéis pequenos).
+
+Contato: WhatsApp +55 61 99998-6693 · joaomarcelobrandaop@gmail.com
+
+## Páginas principais
+
+- [Início](https://sitesjm.vercel.app/): projetos feitos, com links para os sites no ar
+- [Como funciona](https://sitesjm.vercel.app/como-funciona.html): pesquisa do negócio, pesquisa do ramo, prévia grátis com mudanças sem limite até o contrato, ajustes mensais
+- [Pacotes e preços](https://sitesjm.vercel.app/pacotes.html): Essencial R$ 900 + R$ 100/mês (1 página); Profissional R$ 1.500 + R$ 80/mês (até 5 páginas); Completo R$ 2.100, 3 meses sem mensalidade e depois R$ 80/mês (várias páginas, até 3 línguas); Assinatura R$ 0 de entrada + R$ 149/mês (fidelidade de 12 meses)
+- [Perguntas frequentes](https://sitesjm.vercel.app/perguntas-frequentes.html): preço, mensalidade, domínio, prazo, IA, LGPD
+- [Como aparecer no Google](https://sitesjm.vercel.app/google.html): explicação para leigos de SEO, páginas e IA (contém um exemplo com números inventados, marcado como tal)
+
+## Por ramo
+
+- [Sites para turismo e passeios](https://sitesjm.vercel.app/sites-para-turismo.html): inclui contagem própria de 1.188 empresas de passeio em 42 cidades (out/2026): 56% com site funcionando, 38% sem site, 6% com site fora do ar
+- [Sites para pousadas, hostels e hotéis](https://sitesjm.vercel.app/sites-para-hospedagem.html)
+
+## Casos
+
+- [Pena de Ouro](https://sitesjm.vercel.app/caso-pena-de-ouro.html): criatório em Brasília; 1.248 aparições no Google, 180 visitas e 206 aparições nas respostas de IA do Google em 10 semanas, sem anúncio (Google Search Console)
+
+## English
+
+- [Home](https://sitesjm.vercel.app/en/index.html) · [How it works](https://sitesjm.vercel.app/en/how-it-works.html) · [How to show up on Google](https://sitesjm.vercel.app/en/google.html) · [Pricing](https://sitesjm.vercel.app/en/pricing.html)
