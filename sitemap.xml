@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://sitesjm.vercel.app/</loc><lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sitesjm.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sitesjm.vercel.app/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sitesjm.vercel.app/"/>
+  </url>
+  <url><loc>https://sitesjm.vercel.app/en/index.html</loc><lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sitesjm.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sitesjm.vercel.app/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sitesjm.vercel.app/"/>
+  </url>
+  <url><loc>https://sitesjm.vercel.app/como-funciona.html</loc><lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sitesjm.vercel.app/como-funciona.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sitesjm.vercel.app/en/how-it-works.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sitesjm.vercel.app/como-funciona.html"/>
+  </url>
+  <url><loc>https://sitesjm.vercel.app/en/how-it-works.html</loc><lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sitesjm.vercel.app/como-funciona.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sitesjm.vercel.app/en/how-it-works.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sitesjm.vercel.app/como-funciona.html"/>
+  </url>
+  <url><loc>https://sitesjm.vercel.app/google.html</loc><lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sitesjm.vercel.app/google.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sitesjm.vercel.app/en/google.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sitesjm.vercel.app/google.html"/>
+  </url>
+  <url><loc>https://sitesjm.vercel.app/en/google.html</loc><lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sitesjm.vercel.app/google.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sitesjm.vercel.app/en/google.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sitesjm.vercel.app/google.html"/>
+  </url>
+  <url><loc>https://sitesjm.vercel.app/pacotes.html</loc><lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sitesjm.vercel.app/pacotes.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sitesjm.vercel.app/en/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sitesjm.vercel.app/pacotes.html"/>
+  </url>
+  <url><loc>https://sitesjm.vercel.app/en/pricing.html</loc><lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sitesjm.vercel.app/pacotes.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sitesjm.vercel.app/en/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sitesjm.vercel.app/pacotes.html"/>
+  </url>
+</urlset>
